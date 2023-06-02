@@ -1,0 +1,9 @@
+/* Universal Scrolling Frames, v1.1.1, http://ajarproductions.com/scroll */
+ [class*='_showScroll']::-webkit-scrollbar {-webkit-appearance:none; width:8px;height:8px;} [class*='_showScroll']::-webkit-scrollbar-thumb {border-radius:4px;background-color:rgba(0,0,0,.5);}
+[class*='_hideScroll']::-webkit-scrollbar { display:none; } [class*='_hideScroll']{ -ms-overflow-style:none; overflow:-moz-scrollbars-none;}
+[class*='scroll-vert']{overflow-y:auto !important;overflow-x:hidden !important;}
+[class*='scroll-horiz']{overflow-x:auto !important; overflow-y:hidden !important;}
+[class*='scroll-auto'],[class*='scroll-both']{overflow:auto !important;}
+[class*='scroll-none']{overflow:hidden !important; }
+[class^='scroll-'] > div,[class*=' scroll-'] > div{overflow:visible !important;}
+body:not([id^='publication']) [class^='scroll-'], body:not([id^='publication']) [class^='scroll-'] > div,body:not([id^='publication']) [class*=' scroll-'],body:not([id^='publication']) [class*=' scroll-'] > div{-webkit-overflow-scrolling:touch;}
